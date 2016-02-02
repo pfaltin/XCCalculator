@@ -1,0 +1,378 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Uvoz podataka" version="3">
+  <DEPS>
+    <ID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+    <COMPID name="uvoz podataka" mc="ActivityDiagram" uid="0d96d383-6480-471f-b3ee-9648f669202f"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+    <PID name="racunar_preleta" mc="Package" uid="11655259-2582-41ec-9ef1-3abf9c9185b5"/>
+    <ATTRIBUTES>
+      <ATT name="IsSingleExecution">false</ATT>
+      <ATT name="IsReadOnly">false</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Uvoz podataka]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedNode">
+        <OBJECT>
+          <ID name="otvaranje prozora uvoza podataka" mc="OpaqueAction" uid="d2444774-a169-42ff-8feb-f6a800fea66f"/>
+          <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+          <ATTRIBUTES>
+            <ATT name="Body"></ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[otvaranje prozora uvoza podataka]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="2f42708a-5f17-42a7-a7b6-48c98b307a5e"/>
+                <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="odabir datoteke" mc="OpaqueAction" uid="1648c1b1-4543-42ca-969b-6d5092baf59e"/>
+                      <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Initial Node" mc="InitialNode" uid="2b64e3e1-c996-4fa0-a062-d6afde430ada"/>
+          <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Initial Node]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="e26f3293-2c2b-4af1-a6bc-03ee5434f376"/>
+                <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="otvaranje prozora uvoza podataka" mc="OpaqueAction" uid="d2444774-a169-42ff-8feb-f6a800fea66f"/>
+                      <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Activity Final Node" mc="ActivityFinalNode" uid="e956393a-57cf-4d5a-8a69-56a9863fe905"/>
+          <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="odabir datoteke" mc="OpaqueAction" uid="1648c1b1-4543-42ca-969b-6d5092baf59e"/>
+          <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+          <ATTRIBUTES>
+            <ATT name="Body"></ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[odabir datoteke]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="1d2b3f2f-321f-4fe2-a710-9f9f92462a6a"/>
+                <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="čitanje datoteke" mc="CallBehaviorAction" uid="b4f728c3-6e8a-4f77-b02b-c34b0dd6902d"/>
+                      <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="čitanje datoteke" mc="CallBehaviorAction" uid="b4f728c3-6e8a-4f77-b02b-c34b0dd6902d"/>
+          <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+          <ATTRIBUTES>
+            <ATT name="IsSynchronous">true</ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[čitanje datoteke]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="56939430-aec0-4176-9bfd-3292bd49769e"/>
+                <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="provjera ispravnosti" mc="DecisionMergeNode" uid="5105dd23-2951-4665-b4c9-1c00ea1e5156"/>
+                      <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ispis u prozoru" mc="CallBehaviorAction" uid="7455b2e1-4c4d-4b0d-8bfc-1cfa47054a36"/>
+          <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+          <ATTRIBUTES>
+            <ATT name="IsSynchronous">true</ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[ispis u prozoru]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="bd5d1a5e-368b-476c-b432-bd3ffe16ce12"/>
+                <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="odluka o spremanju" mc="DecisionMergeNode" uid="90a76a9c-592c-4c50-9391-07fd536fde62"/>
+                      <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="provjera ispravnosti" mc="DecisionMergeNode" uid="5105dd23-2951-4665-b4c9-1c00ea1e5156"/>
+          <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+          <ATTRIBUTES>
+            <ATT name="DecisionKind">ExclusiveDecision</ATT>
+            <ATT name="DecisionInputBehavior"></ATT>
+            <ATT name="Name"><![CDATA[provjera ispravnosti]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="66e7d797-c12c-4f3a-8c4a-f2d243831129"/>
+                <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[greška pri čitanju]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="poruka o grešci" mc="OpaqueAction" uid="4e43fdc1-818d-417d-ad02-28fb3dd473ed"/>
+                      <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="225cbf29-e2c2-46c9-8696-02ba05482f8b"/>
+                <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[čitanje uspjelo]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="ispis u prozoru" mc="CallBehaviorAction" uid="7455b2e1-4c4d-4b0d-8bfc-1cfa47054a36"/>
+                      <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="poruka o grešci" mc="OpaqueAction" uid="4e43fdc1-818d-417d-ad02-28fb3dd473ed"/>
+          <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+          <ATTRIBUTES>
+            <ATT name="Body"></ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[poruka o grešci]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="71511e00-4af4-45d3-8f69-c8075a743732"/>
+                <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="odabir datoteke" mc="OpaqueAction" uid="1648c1b1-4543-42ca-969b-6d5092baf59e"/>
+                      <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="odluka o spremanju" mc="DecisionMergeNode" uid="90a76a9c-592c-4c50-9391-07fd536fde62"/>
+          <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+          <ATTRIBUTES>
+            <ATT name="DecisionKind">ExclusiveDecision</ATT>
+            <ATT name="DecisionInputBehavior"></ATT>
+            <ATT name="Name"><![CDATA[odluka o spremanju]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="bb48aa16-d4de-464a-b1b4-92ec4e014de6"/>
+                <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[spremanje]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="spremanje u bazu" mc="CallOperationAction" uid="3bdb3719-155a-459e-8db5-58ff7c0b4170"/>
+                      <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="03b67ffe-777f-47ff-8520-961804276c4e"/>
+                <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[odustajanje]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Activity Final Node" mc="ActivityFinalNode" uid="e956393a-57cf-4d5a-8a69-56a9863fe905"/>
+                      <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="spremanje u bazu" mc="CallOperationAction" uid="3bdb3719-155a-459e-8db5-58ff7c0b4170"/>
+          <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+          <ATTRIBUTES>
+            <ATT name="IsSynchronous">true</ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[spremanje u bazu]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="1ac69e94-a8c9-4185-93b2-7a85e4f00a08"/>
+                <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Activity Final Node" mc="ActivityFinalNode" uid="e956393a-57cf-4d5a-8a69-56a9863fe905"/>
+                      <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="28e9a8e3-01fc-40d4-b35f-a847fd9635b3"/>
+          <PID name="Uvoz podataka" mc="Activity" uid="f9926c44-7c54-41c0-b6bb-9d226f7ab030"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="uvoz podataka" mc="ActivityDiagram" uid="0d96d383-6480-471f-b3ee-9648f669202f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

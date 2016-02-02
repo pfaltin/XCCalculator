@@ -1,0 +1,1696 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Izracun preleta" version="3">
+  <DEPS>
+    <ID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+    <COMPID name="izracun preleta act_diagram" mc="ActivityDiagram" uid="5e1fee28-33df-437b-a0e4-7196500debdf"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+    <PID name="racunar_preleta" mc="Package" uid="11655259-2582-41ec-9ef1-3abf9c9185b5"/>
+    <ATTRIBUTES>
+      <ATT name="IsSingleExecution">false</ATT>
+      <ATT name="IsReadOnly">false</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Izracun preleta]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedNode">
+        <OBJECT>
+          <ID name="Initial Node" mc="InitialNode" uid="8384d8b1-8e2d-4478-b6df-bf58eddad3fa"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Initial Node]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="8bb98971-e5b5-4ea9-a480-daa0b3162963"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Otvaranje prozora izračuna" mc="OpaqueAction" uid="20b2f571-39de-450e-9c9f-440a72db57cc"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Otvaranje prozora izračuna" mc="OpaqueAction" uid="20b2f571-39de-450e-9c9f-440a72db57cc"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="Body"></ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[Otvaranje prozora izračuna]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="53dadd62-ab8a-4497-8fc1-7b83d5a908fc"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="unos podataka" mc="DecisionMergeNode" uid="dfd84d36-91d4-40ee-a20b-7a8c327cc70d"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Provjera podataka" mc="ConditionalNode" uid="2ee4a75e-72b5-4516-9288-3c41b5b9079f"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="IsDeterminate">false</ATT>
+            <ATT name="IsAssured">false</ATT>
+            <ATT name="MustIsolate">false</ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[Provjera podataka]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="OwnedClause">
+              <OBJECT>
+                <ID name="Clause" mc="Clause" uid="752973b4-5518-4f5f-b86a-882dc08a28a7"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Test"><![CDATA[odabran zrakoplov]]></ATT>
+                  <ATT name="Name"><![CDATA[Clause]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Clause" mc="Clause" uid="26214803-9a24-4e15-916b-2cb120b96f7a"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Test"><![CDATA[odabrana ruta]]></ATT>
+                  <ATT name="Name"><![CDATA[Clause]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Clause" mc="Clause" uid="66915007-5bef-42f3-a31a-5240b6ae61d0"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Test"><![CDATA[meteo podaci spremni]]></ATT>
+                  <ATT name="Name"><![CDATA[Clause]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="f0a75f4a-23db-46c0-9dcd-8af0cc62b8d6"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="projera kompletnosti podataka za izračun" mc="DecisionMergeNode" uid="b4fa0d4b-808d-4748-97ad-68d580947d21"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="projera kompletnosti podataka za izračun" mc="DecisionMergeNode" uid="b4fa0d4b-808d-4748-97ad-68d580947d21"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="DecisionKind">ExclusiveDecision</ATT>
+            <ATT name="DecisionInputBehavior"></ATT>
+            <ATT name="Name"><![CDATA[projera kompletnosti podataka za izračun]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="62708f74-e0f9-4fde-812c-16c6db80f5bd"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[nedostaju podaci]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="upozorenje o nedostajućim podacima" mc="OpaqueAction" uid="a49b4bfd-a6aa-4d80-9c3c-5d1fe91e0ca5"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="967ece21-231f-42ee-bcf8-4be145c5630e"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[podaci kompletni]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="tip izračuna" mc="DecisionMergeNode" uid="9bc7e164-aadb-44d7-b9e0-42eed88dd82d"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="upozorenje o nedostajućim podacima" mc="OpaqueAction" uid="a49b4bfd-a6aa-4d80-9c3c-5d1fe91e0ca5"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="Body"><![CDATA[ruta, zrakoplov, meteo]]></ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[upozorenje o nedostajućim podacima]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="c9e72fd2-8ad0-4a2b-a681-98553ee6e647"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="unos podataka" mc="DecisionMergeNode" uid="dfd84d36-91d4-40ee-a20b-7a8c327cc70d"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="unos zrakoplova" mc="OpaqueAction" uid="f2c7bf9c-ffcd-4083-8452-6d01bb90405b"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="Body"></ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[unos zrakoplova]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="cd7f0efc-6ffa-4c82-9b44-f9f06b721ec4"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Provjera podataka" mc="ConditionalNode" uid="2ee4a75e-72b5-4516-9288-3c41b5b9079f"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="unos rute" mc="OpaqueAction" uid="7dfe7452-cbd9-4154-ab34-5913a4006ebd"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="Body"></ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[unos rute]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="07f75b59-0c58-4824-bc40-7b8fe4ce5ef7"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="odabir izvora meteoroloških podataka" mc="OpaqueAction" uid="f0b04af2-b134-4969-90b7-fbcfb1494f5d"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="odabir izvora meteoroloških podataka" mc="OpaqueAction" uid="f0b04af2-b134-4969-90b7-fbcfb1494f5d"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="Body"></ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[odabir izvora meteoroloških podataka]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="85cbadbe-0d4d-4bb6-b19e-9506b12cb8ec"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="odabir tipa meteo podataka" mc="DecisionMergeNode" uid="62997407-b8f4-4d01-b2d4-8adc4a268f3f"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="ručni unos" mc="OpaqueAction" uid="dc0d4246-7c7c-4c9d-a32b-18d806c14408"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="Body"><![CDATA[Tz, Tr
+vjetar]]></ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[ručni unos]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="0bbd6a9e-2ea5-4511-b6a1-659f7b7700d4"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Provjera podataka" mc="ConditionalNode" uid="2ee4a75e-72b5-4516-9288-3c41b5b9079f"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="odabir tipa meteo podataka" mc="DecisionMergeNode" uid="62997407-b8f4-4d01-b2d4-8adc4a268f3f"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="DecisionKind">ExclusiveDecision</ATT>
+            <ATT name="DecisionInputBehavior"></ATT>
+            <ATT name="Name"><![CDATA[odabir tipa meteo podataka]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="1f7bc1ba-47a0-4027-b661-7406e0b683c4"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[ručno]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="ručni unos" mc="OpaqueAction" uid="dc0d4246-7c7c-4c9d-a32b-18d806c14408"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="31217d6e-5d5b-4430-bd5f-5480f8de5e25"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[GFS]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="prikupljanje GFS podataka" mc="StructuredActivityNode" uid="5b93f0e9-dc75-4b57-a5e4-8a2b108bbfd0"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="prikupljanje GFS podataka" mc="StructuredActivityNode" uid="5b93f0e9-dc75-4b57-a5e4-8a2b108bbfd0"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="MustIsolate">false</ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[prikupljanje GFS podataka]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Body">
+              <OBJECT>
+                <ID name="izračun putem GFS podataka" mc="ConditionalNode" uid="0e07611d-07b9-4508-800d-806ef0f0f21a"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsDeterminate">false</ATT>
+                  <ATT name="IsAssured">false</ATT>
+                  <ATT name="MustIsolate">false</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[izračun putem GFS podataka]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OwnedClause">
+                    <OBJECT>
+                      <ID name="Clause" mc="Clause" uid="6a441b53-e69c-4606-9c98-ef15f5686924"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Test"><![CDATA[ruta unesena]]></ATT>
+                        <ATT name="Name"><![CDATA[Clause]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="1dfce496-078d-4aed-a990-7fbb41b639b2"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge1" mc="DecisionMergeNode" uid="82aac584-52a4-4d35-8ed6-62eb53c6c509"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="izračun GFS točaka" mc="CallOperationAction" uid="30a9e357-1fc2-4e75-8e56-d62163409893"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[izračun GFS točaka]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="6c64422f-228a-4b30-8080-a08bbf098d2b"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="stvaranje URL-ova " mc="CallOperationAction" uid="a09db316-6191-4f39-8755-b20b65eed294"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="stvaranje URL-ova " mc="CallOperationAction" uid="a09db316-6191-4f39-8755-b20b65eed294"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[stvaranje URL-ova ]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="fdf7b0b7-f581-45b9-a233-2a9c3c4e6515"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="preuzimanje podataka sa GFS poslužitelja" mc="CallOperationAction" uid="5cad5c03-0700-4ded-a22c-53e052336679"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="preuzimanje podataka sa GFS poslužitelja" mc="CallOperationAction" uid="5cad5c03-0700-4ded-a22c-53e052336679"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[preuzimanje podataka sa GFS poslužitelja]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="997f847a-2ecd-43d4-b9fc-97c265514379"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Decision-Merge" mc="DecisionMergeNode" uid="64128839-8aa8-4acc-b4b3-639e621b4710"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="spremanje podatka u bazu" mc="CallOperationAction" uid="afec3ea5-abe4-4cb6-bff4-2a18f1c126c1"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[spremanje podatka u bazu]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="6ea30440-aec5-4862-8625-2becfee2d438"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node" mc="ActivityFinalNode" uid="5c908123-98fd-4d40-9379-b60a10b61aa4"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge" mc="DecisionMergeNode" uid="64128839-8aa8-4acc-b4b3-639e621b4710"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="1c7c2e51-ddce-42d0-a451-e9c74bc9088a"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[greška]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="upozorenje o grešci preuzimanja" mc="OpaqueAction" uid="c3f63dc3-a908-4255-924a-5114afca5329"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="46634c7a-ab2a-4e1a-ac2f-5c4d94e42aed"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="spremanje podatka u bazu" mc="CallOperationAction" uid="afec3ea5-abe4-4cb6-bff4-2a18f1c126c1"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Initial Node" mc="InitialNode" uid="975c29db-f765-4070-b202-07fe14e4c7b0"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="6871c537-b905-47ba-9d58-149cc085c912"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="izračun putem GFS podataka" mc="ConditionalNode" uid="0e07611d-07b9-4508-800d-806ef0f0f21a"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node" mc="ActivityFinalNode" uid="5c908123-98fd-4d40-9379-b60a10b61aa4"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="upozorenje o grešci preuzimanja" mc="OpaqueAction" uid="c3f63dc3-a908-4255-924a-5114afca5329"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[upozorenje o grešci preuzimanja]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="24a18e4d-eeda-4373-a542-762ab6168d17"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node" mc="ActivityFinalNode" uid="5c908123-98fd-4d40-9379-b60a10b61aa4"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Decision-Merge1" mc="DecisionMergeNode" uid="82aac584-52a4-4d35-8ed6-62eb53c6c509"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[Decision-Merge1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="0ac9b057-1fce-4537-9166-d7517af5c4de"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[ruta unesena]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="izračun GFS točaka" mc="CallOperationAction" uid="30a9e357-1fc2-4e75-8e56-d62163409893"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="42d60072-028e-446d-97c9-96887d4decdb"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[nedostaje ruta]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node" mc="ActivityFinalNode" uid="5c908123-98fd-4d40-9379-b60a10b61aa4"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="13a29719-61f9-4787-8d31-c452718f8e68"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Provjera podataka" mc="ConditionalNode" uid="2ee4a75e-72b5-4516-9288-3c41b5b9079f"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="izračun putem ručnog unosa meteo podataka" mc="StructuredActivityNode" uid="2a8213a3-00c2-42e8-924d-58fb1f757922"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="MustIsolate">false</ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[izračun putem ručnog unosa meteo podataka]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Body">
+              <OBJECT>
+                <ID name="Initial Node" mc="InitialNode" uid="2f0d4e51-1598-49e4-b086-0a19d093d3a9"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="6fbfd8ac-014e-4882-9615-693c4af00c6f"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="formiranje dionica" mc="OpaqueAction" uid="35c07aaf-5f6a-4b9d-9690-e58e83f0126b"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="formiranje dionica" mc="OpaqueAction" uid="35c07aaf-5f6a-4b9d-9690-e58e83f0126b"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[formiranje dionica]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="cdd46ca3-7d9a-48bc-8c90-f76d749c9c0b"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="upis vremena starta u prvu točku" mc="OpaqueAction" uid="6c41cf86-afa6-44e8-a9a5-cfcbc63f7163"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="izračun dionice" mc="CallOperationAction" uid="0f5a3e34-a415-45fb-8b58-49dc3ef987d0"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[izračun dionice]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="3d8d1e82-dd15-496c-ab6f-28996cdd292a"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="upis u listu izračuna" mc="OpaqueAction" uid="59910c88-f603-4cc0-975d-c091fd73962e"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node" mc="ActivityFinalNode" uid="3b67a094-2210-48cb-8966-e6c1a96b0ded"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="upis vremena starta u prvu točku" mc="OpaqueAction" uid="6c41cf86-afa6-44e8-a9a5-cfcbc63f7163"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[upis vremena starta u prvu točku]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="a7f33ba0-7f6b-46ef-a397-b5da29602f35"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="izračun dionice" mc="CallOperationAction" uid="0f5a3e34-a415-45fb-8b58-49dc3ef987d0"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="upis u listu izračuna" mc="OpaqueAction" uid="59910c88-f603-4cc0-975d-c091fd73962e"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[upis u listu izračuna]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="f7bcc7b3-6539-41c8-98da-ee24ae8845ae"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="zadnje dionica" mc="DecisionMergeNode" uid="19e1232b-2d70-4c9b-b810-7f6d1d9a60b2"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="zadnje dionica" mc="DecisionMergeNode" uid="19e1232b-2d70-4c9b-b810-7f6d1d9a60b2"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[zadnje dionica]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="e7926faa-dac7-4aa3-8530-56930f4fd445"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[ima još dionica]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="izračun dionice" mc="CallOperationAction" uid="0f5a3e34-a415-45fb-8b58-49dc3ef987d0"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="9c58d973-b5b0-4dff-91b8-a04674a3bdd2"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[sve dionice izračunate]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node" mc="ActivityFinalNode" uid="3b67a094-2210-48cb-8966-e6c1a96b0ded"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="e4c85b4c-41da-474c-98e9-440fbdf1785e"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Activity Final Node" mc="ActivityFinalNode" uid="34d2f6a3-60ba-4765-b155-b8a2633d8bbd"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="izračun putem GFS podataka" mc="StructuredActivityNode" uid="f548ce69-999c-48a7-b9d1-fb349c2553b7"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="MustIsolate">false</ATT>
+            <ATT name="IsMultipleInstance">false</ATT>
+            <ATT name="IsCompensation">false</ATT>
+            <ATT name="Name"><![CDATA[izračun putem GFS podataka]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Body">
+              <OBJECT>
+                <ID name="Initial Node" mc="InitialNode" uid="b51252d6-cbcd-49d7-85b1-c3e9ee352475"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="06dad116-75d2-44ac-8a9a-45d0f127392e"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="formiranje etapa u dionici" mc="ConditionalNode" uid="5dc5e8bc-501e-4a3a-a9db-a16f8a6ac792"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="zadnja etapa u ruti" mc="DecisionMergeNode" uid="eeb420b7-e389-43ad-8047-1034e8f0ed22"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="DecisionKind">ExclusiveDecision</ATT>
+                  <ATT name="DecisionInputBehavior"></ATT>
+                  <ATT name="Name"><![CDATA[zadnja etapa u ruti]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="93feded1-e92a-49e6-9048-5c10271c6dbc"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[sve etape izračunate]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Activity Final Node" mc="ActivityFinalNode" uid="ed47d278-81e4-47bc-a5c7-ffe9f0dbf84e"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="5f6b4b0c-1cb3-491e-8dc0-0a46d9ec98e5"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"><![CDATA[ima još etapa]]></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="stvaranje etape" mc="OpaqueAction" uid="43d8d198-f86b-4977-a09a-ea25c450fa01"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="formiranje etapa u dionici" mc="ConditionalNode" uid="5dc5e8bc-501e-4a3a-a9db-a16f8a6ac792"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsDeterminate">false</ATT>
+                  <ATT name="IsAssured">false</ATT>
+                  <ATT name="MustIsolate">false</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[formiranje etapa u dionici]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OwnedClause">
+                    <OBJECT>
+                      <ID name="Clause" mc="Clause" uid="466c629e-ff43-4499-a1e6-543bc7d6304a"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Test"><![CDATA[Jedrilica - HG - PG]]></ATT>
+                        <ATT name="Name"><![CDATA[Clause]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="c78a286f-28f9-4cda-ab0d-f82807830e60"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="dohvat GFS podatka" mc="CallOperationAction" uid="b081b564-b60e-4051-8934-b7ddb9fcc783"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Activity Final Node" mc="ActivityFinalNode" uid="ed47d278-81e4-47bc-a5c7-ffe9f0dbf84e"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="dohvat GFS podatka" mc="CallOperationAction" uid="b081b564-b60e-4051-8934-b7ddb9fcc783"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[dohvat GFS podatka]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="e63e3391-c18f-435e-aa6e-c022d741d1fc"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Izračun optimalnog početka" mc="CallOperationAction" uid="3be011b8-e0f9-435b-9f0f-d9799df6961f"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Izračun optimalnog početka" mc="CallOperationAction" uid="3be011b8-e0f9-435b-9f0f-d9799df6961f"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsSynchronous">true</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Izračun optimalnog početka]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="619ccc60-83a9-4350-9bae-2c443d6feb6b"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="upis vremena starta u prvu točku rute izračuna" mc="OpaqueAction" uid="f6cc2d84-dfe0-4eaf-9371-d2e94e01edf1"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Izračun etape" mc="StructuredActivityNode" uid="3a3f6bef-4caf-4798-9c53-0ea710649e86"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="MustIsolate">false</ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[Izračun etape]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Body">
+                    <OBJECT>
+                      <ID name="Izračun meteo uvjeta prve točke" mc="CallOperationAction" uid="36e86404-1961-4d9d-97cc-355ca4a6f2f9"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsSynchronous">true</ATT>
+                        <ATT name="IsMultipleInstance">false</ATT>
+                        <ATT name="IsCompensation">false</ATT>
+                        <ATT name="Name"><![CDATA[Izračun meteo uvjeta prve točke]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Outgoing">
+                          <OBJECT>
+                            <ID name="ControlFlow" mc="ControlFlow" uid="7275060d-f820-47a0-b447-696213c37c4a"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                            <ATTRIBUTES>
+                              <ATT name="Guard"></ATT>
+                              <ATT name="Weight"><![CDATA[1]]></ATT>
+                              <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Target">
+                                <REFOBJ>
+                                  <ID name="izračun etape" mc="CallOperationAction" uid="64f981f4-f9e5-4a36-a86a-5eb77932c5d0"/>
+                                  <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                                </REFOBJ>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Activity Final Node" mc="ActivityFinalNode" uid="575bb3f6-e931-4807-9f2e-5952e06ef4e0"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="izračun etape" mc="CallOperationAction" uid="64f981f4-f9e5-4a36-a86a-5eb77932c5d0"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsSynchronous">true</ATT>
+                        <ATT name="IsMultipleInstance">false</ATT>
+                        <ATT name="IsCompensation">false</ATT>
+                        <ATT name="Name"><![CDATA[izračun etape]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Outgoing">
+                          <OBJECT>
+                            <ID name="ControlFlow" mc="ControlFlow" uid="d5d6bf62-058c-43ee-873d-1b8e61b7d7c2"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                            <ATTRIBUTES>
+                              <ATT name="Guard"></ATT>
+                              <ATT name="Weight"><![CDATA[1]]></ATT>
+                              <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Target">
+                                <REFOBJ>
+                                  <ID name="upis u listu izračuna" mc="OpaqueAction" uid="5a3c1f92-46c3-4039-87c6-db6e0a246039"/>
+                                  <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                                </REFOBJ>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Initial Node" mc="InitialNode" uid="718eabf8-4c7c-4dfd-95fb-0e840dd47fd0"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"><![CDATA[Initial Node]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Outgoing">
+                          <OBJECT>
+                            <ID name="ControlFlow" mc="ControlFlow" uid="ef7d1ea0-6443-46c7-a49c-18177fdbc2a5"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                            <ATTRIBUTES>
+                              <ATT name="Guard"></ATT>
+                              <ATT name="Weight"><![CDATA[1]]></ATT>
+                              <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Target">
+                                <REFOBJ>
+                                  <ID name="Izračun meteo uvjeta prve točke" mc="CallOperationAction" uid="36e86404-1961-4d9d-97cc-355ca4a6f2f9"/>
+                                  <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                                </REFOBJ>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="upis u listu izračuna" mc="OpaqueAction" uid="5a3c1f92-46c3-4039-87c6-db6e0a246039"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Body"></ATT>
+                        <ATT name="IsMultipleInstance">false</ATT>
+                        <ATT name="IsCompensation">false</ATT>
+                        <ATT name="Name"><![CDATA[upis u listu izračuna]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Outgoing">
+                          <OBJECT>
+                            <ID name="ControlFlow" mc="ControlFlow" uid="a70d6bf0-de8c-4409-89fb-a53401633875"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                            <ATTRIBUTES>
+                              <ATT name="Guard"></ATT>
+                              <ATT name="Weight"><![CDATA[1]]></ATT>
+                              <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Target">
+                                <REFOBJ>
+                                  <ID name="Activity Final Node" mc="ActivityFinalNode" uid="575bb3f6-e931-4807-9f2e-5952e06ef4e0"/>
+                                  <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                                </REFOBJ>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="3519b894-a63c-49ce-89a1-60cbdd9c24da"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="zadnja etapa u ruti" mc="DecisionMergeNode" uid="eeb420b7-e389-43ad-8047-1034e8f0ed22"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="stvaranje etape" mc="OpaqueAction" uid="43d8d198-f86b-4977-a09a-ea25c450fa01"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[stvaranje etape]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="41953778-ed10-4b3a-a85f-1ee347dd6ee2"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Izračun etape" mc="StructuredActivityNode" uid="3a3f6bef-4caf-4798-9c53-0ea710649e86"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="upis vremena starta u prvu točku rute izračuna" mc="OpaqueAction" uid="f6cc2d84-dfe0-4eaf-9371-d2e94e01edf1"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Body"></ATT>
+                  <ATT name="IsMultipleInstance">false</ATT>
+                  <ATT name="IsCompensation">false</ATT>
+                  <ATT name="Name"><![CDATA[upis vremena starta u prvu točku rute izračuna]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Outgoing">
+                    <OBJECT>
+                      <ID name="ControlFlow" mc="ControlFlow" uid="28005b39-51b6-4e1f-8594-3665c46e2533"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                      <ATTRIBUTES>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="Weight"><![CDATA[1]]></ATT>
+                        <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="stvaranje etape" mc="OpaqueAction" uid="43d8d198-f86b-4977-a09a-ea25c450fa01"/>
+                            <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="4233592f-32c9-4302-b03f-527946f8b6e5"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="Activity Final Node" mc="ActivityFinalNode" uid="34d2f6a3-60ba-4765-b155-b8a2633d8bbd"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="tip izračuna" mc="DecisionMergeNode" uid="9bc7e164-aadb-44d7-b9e0-42eed88dd82d"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="DecisionKind">ExclusiveDecision</ATT>
+            <ATT name="DecisionInputBehavior"></ATT>
+            <ATT name="Name"><![CDATA[tip izračuna]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="75b6f1bd-4ed7-49d4-a65b-c921fc6d7ba2"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[metoda ručnog unosa]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="izračun putem ručnog unosa meteo podataka" mc="StructuredActivityNode" uid="2a8213a3-00c2-42e8-924d-58fb1f757922"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="9b4a3b12-74d5-42a5-ad64-8f9c241a583e"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[GFS metoda]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="izračun putem GFS podataka" mc="StructuredActivityNode" uid="f548ce69-999c-48a7-b9d1-fb349c2553b7"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Activity Final Node" mc="ActivityFinalNode" uid="34d2f6a3-60ba-4765-b155-b8a2633d8bbd"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Activity Final Node]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="unosi podataka" mc="DecisionMergeNode" uid="b0f70a9b-f7a2-4ee3-b35c-3ac1069c1fc7"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="DecisionKind">ExclusiveDecision</ATT>
+            <ATT name="DecisionInputBehavior"></ATT>
+            <ATT name="Name"><![CDATA[unosi podataka]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="30ccd427-ef89-415b-9515-a081a1e1d4fc"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[zrakoplov]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="unos zrakoplova" mc="OpaqueAction" uid="f2c7bf9c-ffcd-4083-8452-6d01bb90405b"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="436ea438-9e0b-4454-8d67-e3561d1f088f"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"><![CDATA[ruta]]></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="unos rute" mc="OpaqueAction" uid="7dfe7452-cbd9-4154-ab34-5913a4006ebd"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="unos podataka" mc="DecisionMergeNode" uid="dfd84d36-91d4-40ee-a20b-7a8c327cc70d"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="DecisionKind">ExclusiveDecision</ATT>
+            <ATT name="DecisionInputBehavior"></ATT>
+            <ATT name="Name"><![CDATA[unos podataka]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Outgoing">
+              <OBJECT>
+                <ID name="ControlFlow" mc="ControlFlow" uid="f03ca4cd-0c50-45bc-959a-9cb7013aeea0"/>
+                <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="Weight"><![CDATA[1]]></ATT>
+                  <ATT name="Name"><![CDATA[ControlFlow]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Target">
+                    <REFOBJ>
+                      <ID name="unosi podataka" mc="DecisionMergeNode" uid="b0f70a9b-f7a2-4ee3-b35c-3ac1069c1fc7"/>
+                      <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="ab583bce-b5c9-499c-bb2f-eb1350ceca12"/>
+          <PID name="Izracun preleta" mc="Activity" uid="54c3f19f-bb9c-49c2-a0b5-f48379d4699c"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="izracun preleta act_diagram" mc="ActivityDiagram" uid="5e1fee28-33df-437b-a0e4-7196500debdf"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

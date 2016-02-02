@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Racunar_Preleta" version="3">
+  <DEPS>
+    <ID name="Racunar_Preleta" mc="DiagramSet" uid="7987af45-53f1-4da5-a9d9-d262ca814adf"/>
+    <COMPID name="Proba1" mc="DiagramSet" uid="f0b2e037-e240-41cc-a2db-5a92403437a6"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Racunar_Preleta" mc="DiagramSet" uid="7987af45-53f1-4da5-a9d9-d262ca814adf"/>
+    <PID name="Racunar_Preleta" mc="Project" uid="bcfb1629-53bf-46ad-a3f4-40f6b60a0e14"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Racunar_Preleta]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Sub">
+        <COMPID name="Proba1" mc="DiagramSet" uid="f0b2e037-e240-41cc-a2db-5a92403437a6"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,2237 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Izračun preleta interakcija" version="3">
+  <DEPS>
+    <ID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+    <COMPID name="izračun seq_diagram" mc="SequenceDiagram" uid="7ebb6566-24f0-4517-8d1b-c5e01ff4b05e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+    <PID name="racunar_preleta" mc="Package" uid="11655259-2582-41ec-9ef1-3abf9c9185b5"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Izračun preleta interakcija]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b090b114-1cb2-4f6c-9a1e-b43bbc1d972f"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">70</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="193c4ed6-612c-450b-b7af-e7a7b6700d6e"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="00264e12-f517-4643-9095-6fb8c506c51e"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Glavni prozor" mc="Lifeline" uid="a14895e1-3610-416a-946d-ab84afb794ac"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="00264e12-f517-4643-9095-6fb8c506c51e"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">70</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="3b2bb442-9c47-4d84-a6fd-54b21be4775c"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1d6f5cf3-922c-4f2d-b4cc-079b25f2ad25"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">292</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="b6196c6f-5934-4073-8845-de1294908a29"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="0e4a4403-ed53-403d-b91f-f23dc11f9fd7"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="3b2bb442-9c47-4d84-a6fd-54b21be4775c"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">70</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="1d6f5cf3-922c-4f2d-b4cc-079b25f2ad25"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0e4a4403-ed53-403d-b91f-f23dc11f9fd7"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">292</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Glavni prozor" mc="Lifeline" uid="a14895e1-3610-416a-946d-ab84afb794ac"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="fe58fa13-c41a-455f-aceb-d9ada3edd6fd"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">146</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Glavni prozor" mc="Lifeline" uid="a14895e1-3610-416a-946d-ab84afb794ac"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e28949e1-300a-416c-a473-b5104babf9ad"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">150</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e40c649a-c238-493b-a544-eebd23b3d731"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">170</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="acc212bf-8955-4739-a809-64d1e94e0482"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">229</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="41483ba0-57c3-4d92-a6c9-29194de420b1"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">307</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="4eb4726f-dbc8-44c1-9e86-3f449bf36ba8"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">327</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="eb545871-76af-4dbc-af9b-6a22e7e853b9"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">200</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="a0bf2c35-db74-456c-9a91-556a7eb49690"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">200</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Glavni prozor" mc="Lifeline" uid="a14895e1-3610-416a-946d-ab84afb794ac"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0731675c-fafa-4390-9952-edb2feb1e8bb"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">220</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Glavni prozor" mc="Lifeline" uid="a14895e1-3610-416a-946d-ab84afb794ac"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="6f71e44f-52e6-4e58-872b-3f63828a55e8"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">53</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="0663dcc1-a4a2-4298-a845-537e5e024b17"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="f1cbc453-07fe-4516-b81c-2a5282924caa"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Glavni prozor" mc="Lifeline" uid="a14895e1-3610-416a-946d-ab84afb794ac"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f1cbc453-07fe-4516-b81c-2a5282924caa"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">53</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f574f6f1-7d5d-440f-a467-da735e035d1e"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">104</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="pokretanjeIzracuna" mc="Message" uid="58738ebf-bb90-4292-aa5a-9cebe919a485"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[ruta, zrakoplov, datum]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[pokretanjeIzracuna]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="6a0421db-69f5-4d17-a0e8-d5ef5161acb5"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Glavni prozor" mc="Lifeline" uid="a14895e1-3610-416a-946d-ab84afb794ac"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="6a0421db-69f5-4d17-a0e8-d5ef5161acb5"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">104</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="377c156b-176b-4de9-ad16-795f79f234d4"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d78f7471-8a46-4a4d-b631-ad97d2228d94"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">815</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Ruta Preleta Izračunata" mc="Message" uid="c82305bf-543e-4306-9a4d-48670b1a2c80"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[rutaPreletaIzracun]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Ruta Preleta Izračunata]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="74f3b436-3420-4027-812f-276b6dca21a1"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="377c156b-176b-4de9-ad16-795f79f234d4"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">104</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="d78f7471-8a46-4a4d-b631-ad97d2228d94"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="74f3b436-3420-4027-812f-276b6dca21a1"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">815</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Glavni prozor" mc="Lifeline" uid="a14895e1-3610-416a-946d-ab84afb794ac"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="057eb81b-2b34-49b0-bd95-be432bc39ce9"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">118</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="formiranjeEtapa" mc="Message" uid="70c2c1c6-7a25-422a-81d4-31b4ab6c69ae"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[ruta, V1]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[formiranjeEtapa]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="034312c0-e0d6-4287-acc3-fd6b10472381"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="034312c0-e0d6-4287-acc3-fd6b10472381"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">164</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="dc2f8cfe-0599-40e3-b9aa-77a213029a92"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">259</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="8edd3496-b676-4bec-b859-215270e4a353"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="8eeb6298-86df-4ce5-a174-8283c2ca3288"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8eeb6298-86df-4ce5-a174-8283c2ca3288"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">259</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="PrognozaMeteo" mc="Lifeline" uid="f968784c-4e04-4e96-a105-8b4e3f573038"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="7921c57a-76ed-49d4-a576-80c9097a03dd"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">303</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="izracunPocetka" mc="Message" uid="76f13e89-45fa-41b7-bbd3-77e4fc0a4a62"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[rutaT1]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[izracunPocetka]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="ff8e6c42-3407-43bc-a73a-f686e2256438"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ff8e6c42-3407-43bc-a73a-f686e2256438"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">326</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="14d0253a-1e4b-4457-b773-01c46f389346"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="PrognozaMeteo" mc="Lifeline" uid="f968784c-4e04-4e96-a105-8b4e3f573038"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8484aaa8-2cc4-47a5-8d3e-a2efe0993b92"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">346</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="60d683cd-3cd9-49e3-b209-1d526ef6e543"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="ccf30f57-b423-44b9-8116-2fdf01aac3ce"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="PrognozaMeteo" mc="Lifeline" uid="f968784c-4e04-4e96-a105-8b4e3f573038"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="14d0253a-1e4b-4457-b773-01c46f389346"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">326</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="8484aaa8-2cc4-47a5-8d3e-a2efe0993b92"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="PrognozaMeteo" mc="Lifeline" uid="f968784c-4e04-4e96-a105-8b4e3f573038"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ccf30f57-b423-44b9-8116-2fdf01aac3ce"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">346</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="809c1b15-7a62-44b4-8380-db9d40fc4aac"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">188</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="4ee13c7c-e229-4f82-b483-97c55f2232a8"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="b5752e4b-7631-4022-8205-566929eb56e7"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b5752e4b-7631-4022-8205-566929eb56e7"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">188</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0ce25913-b87d-4ac9-8c71-1236e36ac940"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">218</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="upisTocakaRute" mc="Message" uid="afd9e4c7-fe1f-4e32-b506-19019734107f"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[tockaRute]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[upisTocakaRute]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="565e5b0b-b3f7-443c-8f38-cc257bc6c187"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="565e5b0b-b3f7-443c-8f38-cc257bc6c187"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">220</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="ae72138a-b0e6-4d7a-80d3-7a16204733c7"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="be5ec9a4-078b-470b-92e8-2d52cd7b53ac"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">821</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="ae72138a-b0e6-4d7a-80d3-7a16204733c7"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">220</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="be5ec9a4-078b-470b-92e8-2d52cd7b53ac"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3a3b966e-a595-421a-984c-b2b3dcb5e253"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">369</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="upisPocetkaPreleta" mc="Message" uid="5ccdad52-e9e4-4d35-b86d-5f29df66cffc"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[vrijemePocetka]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[upisPocetkaPreleta]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="c86d68b7-bdbb-4496-a849-a2bf3fa76cfa"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c86d68b7-bdbb-4496-a849-a2bf3fa76cfa"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">369</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="d36fdb6b-69d5-49f7-b409-9722df6d6a9e"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b6d0874e-2857-4e60-9fd6-dd07357aa621"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">389</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="d36fdb6b-69d5-49f7-b409-9722df6d6a9e"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">369</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="b6d0874e-2857-4e60-9fd6-dd07357aa621"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f27d85ee-419f-47b7-bf47-de88c095d5f7"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">516</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="izracunMeteoTocka" mc="Message" uid="866dc090-4d9f-458f-8523-1e9e0ae28688"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[tocka]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[izracunMeteoTocka]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="77a4086e-f992-4a80-aac9-9885d025a832"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="77a4086e-f992-4a80-aac9-9885d025a832"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">526</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="dcb4d64d-38f5-4b0c-8c1f-c93df6e9d235"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="PrognozaMeteo" mc="Lifeline" uid="f968784c-4e04-4e96-a105-8b4e3f573038"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="cd3ef364-a263-48d1-907c-740c7df2478a"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">546</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="1bdda0f0-9c02-4858-b9f5-e9861d4270e2"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="a8dc96da-e060-4e08-803d-632e130e132a"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="PrognozaMeteo" mc="Lifeline" uid="f968784c-4e04-4e96-a105-8b4e3f573038"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="dcb4d64d-38f5-4b0c-8c1f-c93df6e9d235"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">526</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="cd3ef364-a263-48d1-907c-740c7df2478a"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="PrognozaMeteo" mc="Lifeline" uid="f968784c-4e04-4e96-a105-8b4e3f573038"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="a8dc96da-e060-4e08-803d-632e130e132a"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">546</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3451fe73-81b2-4143-b08f-edcfbc454eaf"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">449</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="87c958f4-c9ba-4050-b85c-67a390a9a6f6"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="60be1f58-5149-4376-a3e4-43b117a8be85"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="60be1f58-5149-4376-a3e4-43b117a8be85"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">449</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="DionicaPreleta" mc="Lifeline" uid="091e46c3-4cff-48b0-b72c-81fd6287c06c"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="3eaf8335-13fc-49da-9cb1-44d61a4f6b2a"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">578</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="izracunDionicePreleta" mc="Message" uid="2e4dffa7-e6f8-4dc3-bec6-b975a8b37642"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[dizanjeBrzina, vjetarSmjer, vjetarBrzina, a,b,c,]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[izracunDionicePreleta]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="55bc3410-72f3-4f57-a2b1-059be442b010"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="55bc3410-72f3-4f57-a2b1-059be442b010"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">586</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="0ca09f23-b56a-4bad-8637-9e1e34b69234"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="DionicaPreleta" mc="Lifeline" uid="091e46c3-4cff-48b0-b72c-81fd6287c06c"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0807a0ef-6862-486f-8ced-a1071da27ab3"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">606</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="izracunDionice" mc="Message" uid="0d69f01c-d0bc-4647-97e6-a457b65828a9"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[duljina, brzina,vrijeme]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[izracunDionice]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="87f5ae62-b783-4cbf-b386-b8fa4c9abbc1"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="DionicaPreleta" mc="Lifeline" uid="091e46c3-4cff-48b0-b72c-81fd6287c06c"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="0ca09f23-b56a-4bad-8637-9e1e34b69234"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">586</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="0807a0ef-6862-486f-8ced-a1071da27ab3"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="DionicaPreleta" mc="Lifeline" uid="091e46c3-4cff-48b0-b72c-81fd6287c06c"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="87f5ae62-b783-4cbf-b386-b8fa4c9abbc1"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">606</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="08b28c30-70cd-45e9-a7ca-91cfe0d9dfa5"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">656</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="destroy" mc="Message" uid="c3735a92-860a-4926-a6ca-1cded8cc7e26"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">DestroyMessage</ATT>
+                  <ATT name="Name"><![CDATA[destroy]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="44340f8f-2c37-47e7-87cf-a5b4027a8652"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="44340f8f-2c37-47e7-87cf-a5b4027a8652"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">656</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="DionicaPreleta" mc="Lifeline" uid="091e46c3-4cff-48b0-b72c-81fd6287c06c"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="98b2f80a-1285-4f85-9fde-0c254ffae00a"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">631</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="upisRezultataDionice" mc="Message" uid="e9fd3bc3-90a3-4a17-a703-c70c6cbc132d"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[upisRezultataDionice]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="4dfe9e62-622e-4adc-860b-f1c8730272c1"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="4dfe9e62-622e-4adc-860b-f1c8730272c1"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">631</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="aec6ec6a-be48-4f44-95cc-a158c8458542"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="27dba47f-de31-44b5-b9ab-59095d598db6"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">651</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="aec6ec6a-be48-4f44-95cc-a158c8458542"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">631</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="27dba47f-de31-44b5-b9ab-59095d598db6"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="06993de2-4ea7-43ef-8a60-194702789405"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">529</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="adf266c3-bcd5-408e-b3d6-50d980b84a76"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">559</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="09ac758b-970c-4446-b9d3-8e87257085cb"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">559</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="50c68d4a-0866-4efa-9008-237e48c483e9"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">586</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="beae6c32-f060-47a0-aa7a-663b7745e563"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">606</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0677ff89-3827-4dd7-9f79-e05f38252506"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">520</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b7b1e793-0360-4427-954f-16fa02985286"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">540</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CombinedFragment" mc="CombinedFragment" uid="4d2bda43-45f0-44a4-bd35-d75667af869e"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="Operator">LoopOp</ATT>
+            <ATT name="LineNumber">426</ATT>
+            <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Operand">
+              <OBJECT>
+                <ID name="" mc="InteractionOperand" uid="351748c0-aa13-4444-98de-9b0eb6d15282"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="EndLineNumber">675</ATT>
+                  <ATT name="LineNumber">426</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+              <REFOBJ>
+                <ID name="PrognozaMeteo" mc="Lifeline" uid="f968784c-4e04-4e96-a105-8b4e3f573038"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+              <REFOBJ>
+                <ID name="DionicaPreleta" mc="Lifeline" uid="091e46c3-4cff-48b0-b72c-81fd6287c06c"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="edeaefd3-d4d7-4fd6-8232-53a14456ad33"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">861</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="destroy" mc="Message" uid="3470ab9f-4bb1-4972-ac50-833660df6522"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">DestroyMessage</ATT>
+                  <ATT name="Name"><![CDATA[destroy]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="1969edc5-5946-4371-a50e-f793ea2bfe7b"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1969edc5-5946-4371-a50e-f793ea2bfe7b"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">861</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1b7174c0-cef6-4150-b06d-3684656b0ece"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">840</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="destroy" mc="Message" uid="74deed31-6850-45dd-94a2-092819aa0a4a"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">DestroyMessage</ATT>
+                  <ATT name="Name"><![CDATA[destroy]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="c0bec637-4f69-4b1f-af84-35b8eba5f37e"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c0bec637-4f69-4b1f-af84-35b8eba5f37e"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">840</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="PrognozaMeteo" mc="Lifeline" uid="f968784c-4e04-4e96-a105-8b4e3f573038"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c115dd71-3b3c-468d-9c5f-f949c9d8fa84"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">879</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="destroy" mc="Message" uid="79d05cbc-04e8-498f-bdb5-5e7c9c636671"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">DestroyMessage</ATT>
+                  <ATT name="Name"><![CDATA[destroy]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="857af9d7-4faf-4078-892d-86f9e91dce29"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Glavni prozor" mc="Lifeline" uid="a14895e1-3610-416a-946d-ab84afb794ac"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="857af9d7-4faf-4078-892d-86f9e91dce29"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">879</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="2c067aaa-6a74-4e95-94c8-e805e77abb55"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">792</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="izracunRute" mc="Message" uid="8eeddfec-e311-4e6c-81b9-616914e0e1f5"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[rutaIzracuna]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[izracunRute]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="e8bbf21b-174f-45c0-9071-b303926657ef"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e8bbf21b-174f-45c0-9071-b303926657ef"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">792</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="ae4a97ce-7fb0-4d32-9145-cf3d8bdeec12"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="82227944-2ce8-43cf-90ce-e72381305a68"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">812</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="c8269bd1-0df5-4cac-91ce-2f63012bd76a"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="2e723c2f-0d61-46ec-8d5c-186360ce9f5a"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="ae4a97ce-7fb0-4d32-9145-cf3d8bdeec12"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">792</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="82227944-2ce8-43cf-90ce-e72381305a68"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="2e723c2f-0d61-46ec-8d5c-186360ce9f5a"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">812</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c8f04b67-1efd-4406-b5f8-c301bb543f23"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">470</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="dajTockeEtape" mc="Message" uid="db11d4fb-dc84-4fbd-9541-a7ad50039845"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[dajTockeEtape]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="378070d5-bac0-4e67-9b0d-1cee9ddffaf8"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="880acc79-0dc9-4fc2-bb48-a71986283aa7"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">482</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="901e1e62-498e-4682-a3dd-077bf5cb510d"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">502</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c2924ea5-edda-4b4c-b302-7e2f71d203cc"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">502</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="55446e83-75a0-4a2c-a31b-785c5c552ac8"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">479</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="a6930d71-acb1-42db-97cd-2b61e1a99345"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">463</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5a1587be-42aa-4c0b-a2cd-5af10558ef35"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">495</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c5dc0f99-3619-4b41-9678-b89f9f27ab08"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">520</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="378070d5-bac0-4e67-9b0d-1cee9ddffaf8"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">470</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="8bbcacf3-4b20-43fa-a543-b7644f43bf68"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="00c332bb-72cf-42fd-b875-5112e2525090"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">490</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="tockeEtape" mc="Message" uid="98a3f124-04e6-4085-b253-7c6c088604eb"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[t1,t2]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[tockeEtape]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="f3015549-d179-453b-8bcc-2f710d6112f9"/>
+                      <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="8bbcacf3-4b20-43fa-a543-b7644f43bf68"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">470</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="00c332bb-72cf-42fd-b875-5112e2525090"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f3015549-d179-453b-8bcc-2f710d6112f9"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">490</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+                <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name="Glavni prozor" mc="Lifeline" uid="a14895e1-3610-416a-946d-ab84afb794ac"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Glavni prozor]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Prelet" mc="Lifeline" uid="8d3856ff-c9cd-4576-8747-9789f7f76e82"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Prelet]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="PrognozaMeteo" mc="Lifeline" uid="f968784c-4e04-4e96-a105-8b4e3f573038"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[PrognozaMeteo]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="RutaPreletaIzračun" mc="Lifeline" uid="c3036742-b372-4c14-8299-c6443b9ed074"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[RutaPreletaIzračun]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DionicaPreleta" mc="Lifeline" uid="091e46c3-4cff-48b0-b72c-81fd6287c06c"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[DionicaPreleta]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="fedff760-5cf2-46f1-8b15-49a155b7e462"/>
+          <PID name="Izračun preleta interakcija" mc="Interaction" uid="858d4086-b814-4640-802d-2c2909ed379d"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="izračun seq_diagram" mc="SequenceDiagram" uid="7ebb6566-24f0-4517-8d1b-c5e01ff4b05e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

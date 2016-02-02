@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="__oHpULjyEeO36ZPKkaTrDA" name="model">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Ewc1ELjzEeO36ZPKkaTrDA" name="pilot"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_TPbAELjzEeO36ZPKkaTrDA" name="upravljanje podacima">
+    <extend xmi:type="uml:Extend" xmi:id="_A2JtQLj0EeO36ZPKkaTrDA" extendedCase="_84e90LjzEeO36ZPKkaTrDA" extensionLocation="_A3qwMLj0EeO36ZPKkaTrDA"/>
+    <extend xmi:type="uml:Extend" xmi:id="_BaV_cLj0EeO36ZPKkaTrDA" extendedCase="_y69kwLjzEeO36ZPKkaTrDA" extensionLocation="_BayrYLj0EeO36ZPKkaTrDA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZpC0kLjzEeO36ZPKkaTrDA" name="A_pilot_upravljanje podacima" memberEnd="_ZpC0kbjzEeO36ZPKkaTrDA _ZpC0lLjzEeO36ZPKkaTrDA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZpC0kbjzEeO36ZPKkaTrDA" name="pilot" type="_Ewc1ELjzEeO36ZPKkaTrDA" association="_ZpC0kLjzEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZpC0krjzEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZpC0k7jzEeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZpC0lLjzEeO36ZPKkaTrDA" name="upravljanje podacima" type="_TPbAELjzEeO36ZPKkaTrDA" association="_ZpC0kLjzEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZpC0lbjzEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZpC0lrjzEeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_baT94LjzEeO36ZPKkaTrDA" clientDependency="_DePJ0Lj0EeO36ZPKkaTrDA" name="izračun preleta">
+    <include xmi:type="uml:Include" xmi:id="_g03soLj0EeO36ZPKkaTrDA" addition="_ZH_ggLj0EeO36ZPKkaTrDA"/>
+    <include xmi:type="uml:Include" xmi:id="_ncXlELj0EeO36ZPKkaTrDA" addition="_kR_60Lj0EeO36ZPKkaTrDA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_emnh0LjzEeO36ZPKkaTrDA" name="A_pilot_izračun preleta" memberEnd="_emnh0bjzEeO36ZPKkaTrDA _emnh1LjzEeO36ZPKkaTrDA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_emnh0bjzEeO36ZPKkaTrDA" name="pilot" type="_Ewc1ELjzEeO36ZPKkaTrDA" association="_emnh0LjzEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_emnh0rjzEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_emnh07jzEeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_emnh1LjzEeO36ZPKkaTrDA" name="izračun preleta" type="_baT94LjzEeO36ZPKkaTrDA" association="_emnh0LjzEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_emnh1bjzEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_emnh1rjzEeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_nhnG4LjzEeO36ZPKkaTrDA" name="DBMS"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_t02mkLjzEeO36ZPKkaTrDA" name="GFS"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_y69kwLjzEeO36ZPKkaTrDA" name="uvoz podatka">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_BayrYLj0EeO36ZPKkaTrDA" name="point"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_84e90LjzEeO36ZPKkaTrDA" name="izvoz podataka">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_A3qwMLj0EeO36ZPKkaTrDA" name="point"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_DePJ0Lj0EeO36ZPKkaTrDA" name="podaci" client="_baT94LjzEeO36ZPKkaTrDA" supplier="_TPbAELjzEeO36ZPKkaTrDA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FTaiwLj0EeO36ZPKkaTrDA" name="A_izračun preleta_dbms" memberEnd="_FTaiwbj0EeO36ZPKkaTrDA _FTaixLj0EeO36ZPKkaTrDA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FTaiwbj0EeO36ZPKkaTrDA" name="izračun preleta" type="_baT94LjzEeO36ZPKkaTrDA" association="_FTaiwLj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FTaiwrj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FTaiw7j0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FTaixLj0EeO36ZPKkaTrDA" name="dbms" type="_nhnG4LjzEeO36ZPKkaTrDA" association="_FTaiwLj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FTaixbj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FTaixrj0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ZH_ggLj0EeO36ZPKkaTrDA" name="priprema parametara">
+    <extend xmi:type="uml:Extend" xmi:id="_he3r4Lj0EeO36ZPKkaTrDA" extendedCase="_c2WooLj0EeO36ZPKkaTrDA" extensionLocation="_hfXbILj0EeO36ZPKkaTrDA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_c2WooLj0EeO36ZPKkaTrDA" name="preuzimanje GFS meteo">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_hfXbILj0EeO36ZPKkaTrDA" name="point"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iYxIULj0EeO36ZPKkaTrDA" name="A_gfs_preuzimanje gfs meteo" memberEnd="_iYxIUbj0EeO36ZPKkaTrDA _iYxIVLj0EeO36ZPKkaTrDA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iYxIUbj0EeO36ZPKkaTrDA" name="gfs" type="_t02mkLjzEeO36ZPKkaTrDA" association="_iYxIULj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iYxIUrj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iYxIU7j0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iYxIVLj0EeO36ZPKkaTrDA" name="preuzimanje gfs meteo" type="_c2WooLj0EeO36ZPKkaTrDA" association="_iYxIULj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iYxIVbj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iYxIVrj0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_kR_60Lj0EeO36ZPKkaTrDA" name="pregled izračuna"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oI4FwLj0EeO36ZPKkaTrDA" name="A_pregled izračuna_dbms" memberEnd="_oI4Fwbj0EeO36ZPKkaTrDA _oI4FxLj0EeO36ZPKkaTrDA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_oI4Fwbj0EeO36ZPKkaTrDA" name="pregled izračuna" type="_kR_60Lj0EeO36ZPKkaTrDA" association="_oI4FwLj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oI4Fwrj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oI4Fw7j0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_oI4FxLj0EeO36ZPKkaTrDA" name="dbms" type="_nhnG4LjzEeO36ZPKkaTrDA" association="_oI4FwLj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oI4Fxbj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oI4Fxrj0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pnKosLj0EeO36ZPKkaTrDA" name="A_pilot_pregled izračuna" memberEnd="_pnKosbj0EeO36ZPKkaTrDA _pnLPwbj0EeO36ZPKkaTrDA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pnKosbj0EeO36ZPKkaTrDA" name="pilot" type="_Ewc1ELjzEeO36ZPKkaTrDA" association="_pnKosLj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pnKosrj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pnLPwLj0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pnLPwbj0EeO36ZPKkaTrDA" name="pregled izračuna" type="_kR_60Lj0EeO36ZPKkaTrDA" association="_pnKosLj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pnLPwrj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pnLPw7j0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_soaMILj0EeO36ZPKkaTrDA" name="A_uvoz podatka_dbms" memberEnd="_soaMIbj0EeO36ZPKkaTrDA _soaMJLj0EeO36ZPKkaTrDA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_soaMIbj0EeO36ZPKkaTrDA" name="uvoz podatka" type="_y69kwLjzEeO36ZPKkaTrDA" association="_soaMILj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_soaMIrj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_soaMI7j0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_soaMJLj0EeO36ZPKkaTrDA" name="dbms" type="_nhnG4LjzEeO36ZPKkaTrDA" association="_soaMILj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_soaMJbj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_soaMJrj0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tTGu8Lj0EeO36ZPKkaTrDA" name="A_izvoz podataka_dbms" memberEnd="_tTGu8bj0EeO36ZPKkaTrDA _tTGu9Lj0EeO36ZPKkaTrDA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tTGu8bj0EeO36ZPKkaTrDA" name="izvoz podataka" type="_84e90LjzEeO36ZPKkaTrDA" association="_tTGu8Lj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tTGu8rj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tTGu87j0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tTGu9Lj0EeO36ZPKkaTrDA" name="dbms" type="_nhnG4LjzEeO36ZPKkaTrDA" association="_tTGu8Lj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tTGu9bj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tTGu9rj0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_w1NjwLj0EeO36ZPKkaTrDA" name="A_pilot_priprema parametara" memberEnd="_w1Njwbj0EeO36ZPKkaTrDA _w1NjxLj0EeO36ZPKkaTrDA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_w1Njwbj0EeO36ZPKkaTrDA" name="pilot" type="_Ewc1ELjzEeO36ZPKkaTrDA" association="_w1NjwLj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1Njwrj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1Njw7j0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_w1NjxLj0EeO36ZPKkaTrDA" name="priprema parametara" type="_ZH_ggLj0EeO36ZPKkaTrDA" association="_w1NjwLj0EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1Njxbj0EeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1Njxrj0EeO36ZPKkaTrDA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JFvj4Lj_EeO36ZPKkaTrDA" name="Prelet">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mQl4ALkAEeO36ZPKkaTrDA" name="preletDionica">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mQl4AbkAEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mQl4ArkAEeO36ZPKkaTrDA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bmW_YLj_EeO36ZPKkaTrDA" name="MeteoGFS">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ltUWYLkBEeO36ZPKkaTrDA" name="meteoSlojGFS">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ltU9cLkBEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ltU9cbkBEeO36ZPKkaTrDA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_kjvxILj_EeO36ZPKkaTrDA" name="Tocka">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VYuJsLkFEeO36ZPKkaTrDA" name="naziv" visibility="public" type="_7VwsMLkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WYMpsLkFEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WYQUELkFEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_WYTXYLkFEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_uMPRMLkGEeO36ZPKkaTrDA" name="geoDuljina" visibility="public" type="__ATrULkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v6hX8LkGEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v6pTwLkGEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_v6s-ILkGEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_w7yAoLkGEeO36ZPKkaTrDA" name="geoSirina" visibility="public" type="__ATrULkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ykaLULkGEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ykcnkLkGEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ykhgELkGEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XyOs0LkHEeO36ZPKkaTrDA" name="visinaMSL" visibility="public" type="_9ErFELkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_brNJgLkHEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_brQM0LkHEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_brVFULkHEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qXOSALkHEeO36ZPKkaTrDA" name="kod" visibility="public" type="_7VwsMLkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uLP9QLkHEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uLSZgLkHEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_uLX5ELkHEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vAMoQLkHEeO36ZPKkaTrDA" name="opis" visibility="public" type="_7VwsMLkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zhrPYLkHEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zhtEkLkHEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_zhzLMLkHEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MBbccLkAEeO36ZPKkaTrDA" name="MeteoDionica"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_YSuuoLkDEeO36ZPKkaTrDA" name="Zrakoplov">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cTv6wLkIEeO36ZPKkaTrDA" name="naziv" visibility="public" type="_7VwsMLkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eUXHoLkIEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eUZj4LkIEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_eUecYLkIEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_iCMEQLkIEeO36ZPKkaTrDA" name="tezinaSuha" visibility="public" type="_9ErFELkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n7FxULkIEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n7I0oLkIEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_n7OUMLkIEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pOKiwLkIEeO36ZPKkaTrDA" name="balastTezina" visibility="public" type="_9ErFELkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sKns0LkIEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sKqwILkIEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_sKwPsLkIEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_u9xw8LkIEeO36ZPKkaTrDA" name="a" visibility="public" type="__ATrULkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yRwqMLkIEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yRztgLkIEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yR50ILkIEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zIalYLkIEeO36ZPKkaTrDA" name="b" visibility="public" type="__ATrULkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Z_mcLkIEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1aCCsLkIEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_1aJXcLkIEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2DOwsLkIEeO36ZPKkaTrDA" name="c" visibility="public" type="__ATrULkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3ZWPELkIEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3ZYrULkIEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_3ZeK4LkIEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6CfbkLkIEeO36ZPKkaTrDA" name="opis" visibility="public" type="_7VwsMLkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6czZALkIEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6c3DYLkIEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_6c6GsLkIEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_cdfe4LkDEeO36ZPKkaTrDA" name="Ruta">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6W-6ULkHEeO36ZPKkaTrDA" name="naziv" visibility="public" type="_7VwsMLkGEeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__H32cLkHEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__H65wLkHEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="__IBAYLkHEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__-yQULkHEeO36ZPKkaTrDA" name="ruteTocka" visibility="public" type="_kjvxILj_EeO36ZPKkaTrDA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E_LoELkIEeO36ZPKkaTrDA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E_OEULkIEeO36ZPKkaTrDA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_E_S80LkIEeO36ZPKkaTrDA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ShiZ0LkIEeO36ZPKkaTrDA" name="duljinaRute"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_U_TcwLkIEeO36ZPKkaTrDA" name="duljinaDionice"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_7VwsMLkGEeO36ZPKkaTrDA" name="String"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_9ErFELkGEeO36ZPKkaTrDA" name="Integer"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="__ATrULkGEeO36ZPKkaTrDA" name="Float"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_JX77kLkJEeO36ZPKkaTrDA" name="PreletDionica"/>
+</uml:Model>

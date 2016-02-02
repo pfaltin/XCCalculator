@@ -1,0 +1,1368 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Uređivanje podataka - izmjene interakcija" version="3">
+  <DEPS>
+    <ID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+    <COMPID name="Uređivanje podataka - izmjene seq_diagram" mc="SequenceDiagram" uid="ed2d061b-f70b-41e1-9b3a-fcef6934dc31"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+    <PID name="racunar_preleta" mc="Package" uid="11655259-2582-41ec-9ef1-3abf9c9185b5"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Uređivanje podataka - izmjene interakcija]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e08ce3ad-8488-4dad-ba23-24939dfad077"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">59</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="odabirTipaPodatka" mc="Message" uid="470b67f7-4012-4537-aff1-75133cd740c8"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[odabirTipaPodatka]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="6c3f3040-ff3b-4c32-b076-021b930d5b58"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="6c3f3040-ff3b-4c32-b076-021b930d5b58"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">68</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="01e8f6ba-1870-4057-94c1-ba3c1bbf5ed7"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="39bab92b-cf2b-414c-9bad-b7dee5b5b0f8"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">95</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="3441952e-5e9e-4b38-971f-35b1e8db4da2"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="aeb0d2c5-5714-4235-b317-5d343e6c5321"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="01e8f6ba-1870-4057-94c1-ba3c1bbf5ed7"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">68</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="39bab92b-cf2b-414c-9bad-b7dee5b5b0f8"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="55363641-5620-44b6-ab2a-7ff659f1f459"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">117</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="citanjePodatakaBaza" mc="Message" uid="d40aab89-d8bb-4a30-8eaa-791b5510db89"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[citanjePodatakaBaza]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="585d6334-c1aa-434a-b6cf-826955d52313"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="585d6334-c1aa-434a-b6cf-826955d52313"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">117</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="42bd6d62-ec59-429c-9bd8-6ee986024f99"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="BazaPodataka" mc="Lifeline" uid="bf9983f8-c778-4ad2-b386-743ac25863f9"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="dbc0c3fb-9770-4b04-8170-9df8b99ecda3"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">137</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Podaci" mc="Message" uid="4871836b-04a1-47bc-a31c-77b1eb8d4156"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Podaci]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="88e5f446-bb69-49cb-86a7-6cacf2124fab"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="BazaPodataka" mc="Lifeline" uid="bf9983f8-c778-4ad2-b386-743ac25863f9"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="42bd6d62-ec59-429c-9bd8-6ee986024f99"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">117</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="dbc0c3fb-9770-4b04-8170-9df8b99ecda3"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="BazaPodataka" mc="Lifeline" uid="bf9983f8-c778-4ad2-b386-743ac25863f9"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="88e5f446-bb69-49cb-86a7-6cacf2124fab"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">137</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="533cefc2-f08c-49f2-b2ed-5445945c3cfb"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">172</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="prikazPodataka" mc="Message" uid="0ac739e2-7cb7-472f-b93e-07d1b407820b"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[prikazPodataka]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="ce9c61fd-b361-4424-b7a9-a12952d1913b"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ce9c61fd-b361-4424-b7a9-a12952d1913b"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">182</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="df969b83-fc89-45cd-9fb0-c05058994b02"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5eeb50d6-568a-49d7-89f0-4f1721134381"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">202</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="df969b83-fc89-45cd-9fb0-c05058994b02"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">182</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="5eeb50d6-568a-49d7-89f0-4f1721134381"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="aeb0d2c5-5714-4235-b317-5d343e6c5321"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">95</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Lifeline" mc="Lifeline" uid="5638ca13-1831-42d0-8663-6f09246e8bba"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="01bce42d-0308-41c9-8b16-f96ecc4542e7"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">212</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="odabirRadnje" mc="Message" uid="a49d0e05-114b-4b75-980a-a4b510e6a754"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[odabirRadnje]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="5b93270b-122d-417e-b6d0-9f84c70922ae"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5b93270b-122d-417e-b6d0-9f84c70922ae"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">219</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="2c80839c-6716-49f4-b67b-4bdaebd767b4"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="09b49188-ee0f-49af-82b2-fda6874fa4f8"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">239</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="2c80839c-6716-49f4-b67b-4bdaebd767b4"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">219</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="09b49188-ee0f-49af-82b2-fda6874fa4f8"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="51c8f413-1644-4ea6-8f79-954d13294d5c"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">154</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="upisPodatakaLista" mc="Message" uid="1f7dc413-4188-4cf5-8f2d-aa7466c05acc"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[upisPodatakaLista]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="dc897d0a-dcf0-40db-bfcc-0775e1cfac6c"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="dc897d0a-dcf0-40db-bfcc-0775e1cfac6c"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">154</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="d126debe-427c-42a4-a8cb-6dd6656b4989"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Lifeline" mc="Lifeline" uid="5638ca13-1831-42d0-8663-6f09246e8bba"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="401e3c85-d51b-497f-87d6-30eb8f8d02ed"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">510</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Lifeline" mc="Lifeline" uid="5638ca13-1831-42d0-8663-6f09246e8bba"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="d126debe-427c-42a4-a8cb-6dd6656b4989"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">154</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="401e3c85-d51b-497f-87d6-30eb8f8d02ed"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Lifeline" mc="Lifeline" uid="5638ca13-1831-42d0-8663-6f09246e8bba"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b1fc6bf6-4a37-435f-ab16-b8ca48500a4f"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">251</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="odabirPodatka" mc="Message" uid="9dc359f2-0225-4708-9177-0d113dea3a9d"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[odabirPodatka]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="e8e4383a-bc7b-468c-8035-339b6e9c5e53"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="e8e4383a-bc7b-468c-8035-339b6e9c5e53"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">264</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="ab55efde-13d5-4d55-ad02-db64010e7b19"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="6c1689e8-fdb8-4be6-b179-ea03b33df933"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">284</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="ab55efde-13d5-4d55-ad02-db64010e7b19"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">264</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="6c1689e8-fdb8-4be6-b179-ea03b33df933"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b3fc035f-6229-463b-a182-50d8f210ba17"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">299</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="izmjenaPodatka" mc="Message" uid="4131d50c-0c36-4f95-8d3f-5b927d20113f"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[izmjenaPodatka]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="65d462ee-c7fe-40e1-9a09-3afbd44956bb"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="65d462ee-c7fe-40e1-9a09-3afbd44956bb"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">315</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="31038742-94b8-49a0-897c-d01b6231157d"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="670b9747-9593-4d7c-bec4-a808929eb353"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">335</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="31038742-94b8-49a0-897c-d01b6231157d"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">315</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="670b9747-9593-4d7c-bec4-a808929eb353"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1c2b9226-2fec-4c75-9d04-9b9a1aa9a575"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">344</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="upisIzmjeneLista" mc="Message" uid="5f06bda6-faf2-44f3-b1e9-b0728de4b6af"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[upisIzmjeneLista]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="ad79993b-84b6-4693-ba54-37cbf3556a61"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ad79993b-84b6-4693-ba54-37cbf3556a61"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">344</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Lifeline" mc="Lifeline" uid="5638ca13-1831-42d0-8663-6f09246e8bba"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="bffa149d-4846-4ee7-9f86-1f8dac4dcfdb"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">370</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="citanjePodatakaLIsta" mc="Message" uid="4e652671-619a-4e9c-ac6d-f5c57f3e5e42"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[citanjePodatakaLIsta]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="9707c9cc-4b44-45c9-9a80-4f86cd7b733d"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="9707c9cc-4b44-45c9-9a80-4f86cd7b733d"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">370</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Lifeline" mc="Lifeline" uid="5638ca13-1831-42d0-8663-6f09246e8bba"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="29c57cd8-5e0d-4324-9c4d-b3dab5dcf17a"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">385</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="Podaci" mc="Message" uid="24961aaf-576d-4126-8319-ca5a0210bdbc"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"><![CDATA[Podaci]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="555bf7c8-80c7-4e46-a700-bf863e8fdc2e"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Lifeline" mc="Lifeline" uid="5638ca13-1831-42d0-8663-6f09246e8bba"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="555bf7c8-80c7-4e46-a700-bf863e8fdc2e"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">387</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="741d3359-e046-4411-84e4-fb68e5b61758"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d326ac10-aaac-4b15-a07e-62ca81362c4b"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">407</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="741d3359-e046-4411-84e4-fb68e5b61758"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">387</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="d326ac10-aaac-4b15-a07e-62ca81362c4b"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8e64ba86-5db1-48ad-bc4d-5ee659ad5c51"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">9</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="3c494394-d43b-4027-b85c-cdfd507aa2eb"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="5f047011-f299-4658-8b7e-81f2aa75c0d5"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">541</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="3c494394-d43b-4027-b85c-cdfd507aa2eb"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">9</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="5f047011-f299-4658-8b7e-81f2aa75c0d5"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="20e75201-bddb-4cb8-b008-bd8495ac67b8"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">420</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="potvrdaIzmjene" mc="Message" uid="34a97b76-5b5a-4c0c-b379-9944a2b85000"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[potvrdaIzmjene]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="21c1cb9c-b0fc-4bd8-9235-ea246fdc5030"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="21c1cb9c-b0fc-4bd8-9235-ea246fdc5030"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">430</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="10bab594-a3eb-4640-b468-76250971616b"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="9f1625d2-bd14-431a-8a1e-87bb59bf2cbc"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">450</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="10bab594-a3eb-4640-b468-76250971616b"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">430</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="9f1625d2-bd14-431a-8a1e-87bb59bf2cbc"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="281e545d-777b-4706-b406-1bb67f2fb6fe"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">466</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="izmjenaPodatakaBaza" mc="Message" uid="cbf3ca42-de90-4989-a9c9-b3838e0c39ce"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ASyncCall</ATT>
+                  <ATT name="Name"><![CDATA[izmjenaPodatakaBaza]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="df745450-5239-4d4b-bbfb-9c03c0ccad60"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="df745450-5239-4d4b-bbfb-9c03c0ccad60"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">466</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="47a587f2-dd79-49c9-922f-b2d4610006fa"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="BazaPodataka" mc="Lifeline" uid="bf9983f8-c778-4ad2-b386-743ac25863f9"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="759b07ec-a7c2-4c52-afbb-6b36c087bb72"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">486</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="BazaPodataka" mc="Lifeline" uid="bf9983f8-c778-4ad2-b386-743ac25863f9"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="47a587f2-dd79-49c9-922f-b2d4610006fa"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">466</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="759b07ec-a7c2-4c52-afbb-6b36c087bb72"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="BazaPodataka" mc="Lifeline" uid="bf9983f8-c778-4ad2-b386-743ac25863f9"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ec18a87e-8d6a-4c70-8563-20fbfb1ce88b"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">509</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="c5b5fb4d-935f-4161-9ad4-00f161ded364"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">DestroyMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="401e3c85-d51b-497f-87d6-30eb8f8d02ed"/>
+                      <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+                <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name="UpravljanjePodacima" mc="Lifeline" uid="e3ef918f-9051-4546-9773-1196dc6a9c4e"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[UpravljanjePodacima]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="BazaPodataka" mc="Lifeline" uid="bf9983f8-c778-4ad2-b386-743ac25863f9"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[BazaPodataka]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Lifeline" mc="Lifeline" uid="5638ca13-1831-42d0-8663-6f09246e8bba"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Lifeline]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="db865521-ed1d-435a-978b-3cfda7fc3c6d"/>
+          <PID name="Uređivanje podataka - izmjene interakcija" mc="Interaction" uid="a0aa3c97-4f39-462e-bacd-0f0d722e0adf"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Uređivanje podataka - izmjene seq_diagram" mc="SequenceDiagram" uid="ed2d061b-f70b-41e1-9b3a-fcef6934dc31"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

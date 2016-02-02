@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Uporaba" version="3">
+  <DEPS>
+    <ID name="Uporaba" mc="Package" uid="676357b8-c9a8-4ea8-baf0-953c7255b924"/>
+    <COMPID name="Class" mc="Class" uid="dd77dc50-b2aa-4b04-a38e-247f2f177872"/>
+    <COMPID name="Class1" mc="Class" uid="b9d9ff49-539c-4102-889f-49c119226740"/>
+    <COMPID name="DBMS" mc="Actor" uid="2e355cb5-d136-4008-bf0d-ea9f3200d6f1"/>
+    <COMPID name="GFS server" mc="Actor" uid="134b4f6c-8538-462a-a297-6b1ef2824ab4"/>
+    <COMPID name="diagram uporabe" mc="UseCaseDiagram" uid="960c7334-d6d3-462f-8b55-ff995210869c"/>
+    <COMPID name="izračun preleta" mc="UseCase" uid="814d22bc-bbfb-45ae-92e7-dd55525c68eb"/>
+    <COMPID name="odabir i unos parametara" mc="UseCase" uid="80b94b35-5641-4246-8c10-7b5713601375"/>
+    <COMPID name="pilot" mc="Actor" uid="044c4d6b-103b-4f87-b0db-24ca87ea7023"/>
+    <COMPID name="pregled rezultata izračuna" mc="UseCase" uid="1c3414b9-5192-4059-b3ac-bb02df0297fc"/>
+    <COMPID name="pruzimanje meteo parametara sa GFS poslužitelja" mc="UseCase" uid="1330343c-aacd-4fc1-9a8b-54a561670be0"/>
+    <COMPID name="ručni unos meteo parametrara" mc="UseCase" uid="da308214-d5dd-443e-97e7-b0c3428dc9e3"/>
+    <COMPID name="upravljanje podacima" mc="UseCase" uid="45567651-d7cd-40c7-87e0-24b00e6b6e0d"/>
+    <EXTID name="DBMS" mc="Actor" uid="2e355cb5-d136-4008-bf0d-ea9f3200d6f1"/>
+    <EXTID name="GFS server" mc="Actor" uid="134b4f6c-8538-462a-a297-6b1ef2824ab4"/>
+    <EXTID name="izračun preleta" mc="UseCase" uid="814d22bc-bbfb-45ae-92e7-dd55525c68eb"/>
+    <EXTID name="pruzimanje meteo parametara sa GFS poslužitelja" mc="UseCase" uid="1330343c-aacd-4fc1-9a8b-54a561670be0"/>
+    <EXTID name="upravljanje podacima" mc="UseCase" uid="45567651-d7cd-40c7-87e0-24b00e6b6e0d"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Uporaba" mc="Package" uid="676357b8-c9a8-4ea8-baf0-953c7255b924"/>
+    <PID name="racunar_preleta" mc="Package" uid="11655259-2582-41ec-9ef1-3abf9c9185b5"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Uporaba]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedInformationFlow">
+        <OBJECT>
+          <ID name="InformationFlow" mc="InformationFlow" uid="0b54b2a5-6a03-4857-8fb6-2906279f87b4"/>
+          <PID name="Uporaba" mc="Package" uid="676357b8-c9a8-4ea8-baf0-953c7255b924"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[InformationFlow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="izračun preleta" mc="UseCase" uid="814d22bc-bbfb-45ae-92e7-dd55525c68eb"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="DBMS" mc="Actor" uid="2e355cb5-d136-4008-bf0d-ea9f3200d6f1"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InformationFlow" mc="InformationFlow" uid="8405d055-3774-4ec5-97c7-19f48dd277dc"/>
+          <PID name="Uporaba" mc="Package" uid="676357b8-c9a8-4ea8-baf0-953c7255b924"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[InformationFlow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="pruzimanje meteo parametara sa GFS poslužitelja" mc="UseCase" uid="1330343c-aacd-4fc1-9a8b-54a561670be0"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="GFS server" mc="Actor" uid="134b4f6c-8538-462a-a297-6b1ef2824ab4"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InformationFlow" mc="InformationFlow" uid="20366b2a-2686-4a39-8797-e9ec8aaf81f6"/>
+          <PID name="Uporaba" mc="Package" uid="676357b8-c9a8-4ea8-baf0-953c7255b924"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[InformationFlow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <ID name="upravljanje podacima" mc="UseCase" uid="45567651-d7cd-40c7-87e0-24b00e6b6e0d"/>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <ID name="DBMS" mc="Actor" uid="2e355cb5-d136-4008-bf0d-ea9f3200d6f1"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="pilot" mc="Actor" uid="044c4d6b-103b-4f87-b0db-24ca87ea7023"/>
+        <COMPID name="izračun preleta" mc="UseCase" uid="814d22bc-bbfb-45ae-92e7-dd55525c68eb"/>
+        <COMPID name="upravljanje podacima" mc="UseCase" uid="45567651-d7cd-40c7-87e0-24b00e6b6e0d"/>
+        <COMPID name="DBMS" mc="Actor" uid="2e355cb5-d136-4008-bf0d-ea9f3200d6f1"/>
+        <COMPID name="GFS server" mc="Actor" uid="134b4f6c-8538-462a-a297-6b1ef2824ab4"/>
+        <COMPID name="odabir i unos parametara" mc="UseCase" uid="80b94b35-5641-4246-8c10-7b5713601375"/>
+        <COMPID name="pregled rezultata izračuna" mc="UseCase" uid="1c3414b9-5192-4059-b3ac-bb02df0297fc"/>
+        <COMPID name="Class" mc="Class" uid="dd77dc50-b2aa-4b04-a38e-247f2f177872"/>
+        <COMPID name="Class1" mc="Class" uid="b9d9ff49-539c-4102-889f-49c119226740"/>
+        <COMPID name="ručni unos meteo parametrara" mc="UseCase" uid="da308214-d5dd-443e-97e7-b0c3428dc9e3"/>
+        <COMPID name="pruzimanje meteo parametara sa GFS poslužitelja" mc="UseCase" uid="1330343c-aacd-4fc1-9a8b-54a561670be0"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="diagram uporabe" mc="UseCaseDiagram" uid="960c7334-d6d3-462f-8b55-ff995210869c"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

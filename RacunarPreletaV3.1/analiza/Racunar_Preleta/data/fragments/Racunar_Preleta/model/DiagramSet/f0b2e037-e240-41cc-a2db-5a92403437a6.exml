@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Proba1" version="3">
+  <DEPS>
+    <ID name="Proba1" mc="DiagramSet" uid="f0b2e037-e240-41cc-a2db-5a92403437a6"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Proba1" mc="DiagramSet" uid="f0b2e037-e240-41cc-a2db-5a92403437a6"/>
+    <PID name="Racunar_Preleta" mc="DiagramSet" uid="7987af45-53f1-4da5-a9d9-d262ca814adf"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Proba1]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

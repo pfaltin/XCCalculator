@@ -1,0 +1,14 @@
+Prelet po ruti: AERODROM-AERODROM_2014-06-01
+na zrakoplovu: ASW 19 ,na dan:2014-06-01
+Meteo podaci su uneseni rucno. kod: 3
+Ukupno vrijeme preleta 3 sati i 26 minuta.
+Duljina rute preleta je 304,01km
+Ocekivana brzina preleta je 88,53km/h
+Trajanje preleta je 3 sati i 26 minuta.
+Pocetak preleta je u 11 sati
+Dolazak na cilj u 14 sati i 26minuta.
+
+Naziv_pocetak,Naziv_kraj,Visina_m,Dizanje_m/s,Baza_m,Vjetar_m/s,Vjetar_smjer,Duljina_dionice,V dionica_km/h,Dolazak_na pocetak,Vrijeme_dionica,Dolazak_na kraj,V start_km/h,Vrijeme_ukupno,Duljina_km,Kindex,Stratus vj.,
+AERODROM,KARLOV,298,2,33,1830,4,00,190,82,50,88,34,11:00,0:00,11:56,88,34,0:00,82,50,0,0
+KARLOV,GOSPIC,111,2,33,1830,4,00,190,106,58,89,54,11:56,1:56,13:7,88,94,2:56,189,08,0,0
+GOSPIC,AERODROM,561,2,33,1830,4,00,190,114,93,87,71,13:07,1:07,14:26,88,53,3:07,304,01,0,0

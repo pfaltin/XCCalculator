@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DBMS" version="3">
+  <DEPS>
+    <ID name="DBMS" mc="Actor" uid="2e355cb5-d136-4008-bf0d-ea9f3200d6f1"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="DBMS" mc="Actor" uid="2e355cb5-d136-4008-bf0d-ea9f3200d6f1"/>
+    <PID name="proba1" mc="Package" uid="676357b8-c9a8-4ea8-baf0-953c7255b924"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[DBMS]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
